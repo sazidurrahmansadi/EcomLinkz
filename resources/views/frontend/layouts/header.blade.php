@@ -73,11 +73,10 @@
                     <div class="search-bar-top">
                         <div class="search-bar">
                             <select>
-                                <? php $categories = app\Http\Helper::getAllCategory(); ?>
                                 <option >All Category</option>
-                                @foreach($categories as $cat)
+                                {{-- @foreach($categories as $cat)
                                     <option>{{$cat->title}}</option>
-                                @endforeach
+                                @endforeach --}}
                             </select>
                             <form method="POST" action="{{route('product.search')}}">
                                 @csrf
