@@ -74,9 +74,9 @@
                         <div class="search-bar">
                             <select>
                                 <option >All Category</option>
-                                {{-- @foreach($categories as $cat)
+                                @foreach(Helper::getAllCategory() as $cat)
                                     <option>{{$cat->title}}</option>
-                                @endforeach --}}
+                                @endforeach
                             </select>
                             <form method="POST" action="{{route('product.search')}}">
                                 @csrf
