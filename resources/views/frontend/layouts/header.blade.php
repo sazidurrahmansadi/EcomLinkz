@@ -73,7 +73,7 @@
                     <div class="search-bar-top">
                         <div class="search-bar">
                             <select>
-                                <? php $categories = App\Http\Helper::getAllCategory(); ?>
+                                <? php $categories = app\Http\Helper::getAllCategory(); ?>
                                 <option >All Category</option>
                                 @foreach($categories as $cat)
                                     <option>{{$cat->title}}</option>
